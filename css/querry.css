@@ -1,0 +1,141 @@
+/* For 1200 px */
+
+@media (max-width: 75em) {
+  .search-form {
+    width: 35%;
+  }
+
+  .box {
+    width: 35%;
+  }
+}
+
+@media (max-width: 65.625em) {
+  .search-form {
+    width: 40%;
+  }
+  .box {
+    width: 40%;
+  }
+}
+
+@media (max-width: 57.375em) {
+  .search-form {
+    width: 45%;
+  }
+  .box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 49.375em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .search-form {
+    width: 50%;
+  }
+  .box {
+    width: 50%;
+  }
+}
+
+@media (max-width: 41.25em) {
+  .search-form {
+    width: 55%;
+  }
+
+  .box {
+    width: 55%;
+  }
+
+  .list__bookmarks {
+    transform: translateY(50%) translateX(-60%);
+  }
+}
+
+@media (max-width: 37.875em) {
+  .search-form {
+    width: 60%;
+  }
+
+  .box {
+    width: 65%;
+  }
+
+  .list__bookmarks {
+    transform: translateY(50%) translateX(-70%);
+  }
+}
+
+@media (max-width: 37.875em) {
+  .search-form {
+    width: 65%;
+  }
+
+  .box {
+    width: 70%;
+  }
+
+  .list__bookmarks {
+    transform: translateY(50%) translateX(-80%);
+  }
+}
+
+@media (max-width: 31em) {
+  .search-form {
+    width: 70%;
+  }
+
+  .search-bar {
+    padding: 0.6rem 1.2rem;
+  }
+
+  .box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 28em) {
+  html {
+    font-size: 50%;
+  }
+
+  .search-form {
+    width: 75%;
+  }
+
+  .search-bar {
+    padding: 0.6rem 1.2rem;
+  }
+
+  .box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 22.9375em) {
+  .search-bar {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .search-form {
+    width: 90%;
+  }
+
+  article {
+    padding: 9.8rem 1.6rem;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .detail-box li p {
+    padding-left: 1.2rem;
+  }
+  .box-message {
+    width: 20rem;
+  }
+}

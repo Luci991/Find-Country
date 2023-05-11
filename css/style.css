@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.25%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #e2eeff;
+  color: #162233;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+header {
+  width: 100%;
+  height: 8rem;
+  background: linear-gradient(#98c5ff, #6cacff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2.4rem 3.4rem 0 rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  overflow: hidden;
+  border-radius: 2rem;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.search-form:focus-within,
+.search-form:focus {
+  transform: translateY(-5%);
+  box-shadow: 0 1.4rem 2.3rem 0 rgba(0, 0, 0, 0.15);
+  outline: 2px solid #8de8ff;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.search-bar::placeholder {
+  color: #416799;
+}
+
+.search-bar {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.6rem;
+  color: #20344c;
+  border-radius: 2rem;
+  border: none;
+  padding-left: 3.2rem;
+}
+
+.search-btn {
+  height: 3.5rem;
+  width: 12.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 2rem;
+  border: none;
+  font-weight: 100;
+  font-size: 1.6rem;
+  color: #f9f9f9;
+  transition: all 0.5s;
+  background-color: #a7cddd;
+  padding: 0 0.4rem;
+}
+
+.search-btn:hover {
+  /* height: 4.5rem;
+  width: 12.9rem; */
+  font-size: 1.5rem;
+  transform: scale(1.1, 1.1);
+}
+
+.search-btn-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: all 0.5s;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+article {
+  padding: 9.8rem 3.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 3.4rem 3.4rem rgba(0, 0, 0, 0.137);
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.image {
+  width: 100%;
+}
+
+.region {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.detail-box {
+  list-style: none;
+  width: 100%;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.detail-box li {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.detail-box li p {
+  padding-left: 2.4rem;
+  font-weight: 300;
+  color: #333;
+}
+
+.detail-icon {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  stroke: #416799;
+  background-color: #98c5ff;
+  border-radius: 50%;
+}
+
+.detail-box li span {
+  margin-left: auto;
+  font-weight: 500;
+}
+
+.box-error {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.icon-error {
+  width: 4rem;
+  height: 4rem;
+  stroke: #4b9bdd;
+}
+
+.box-error p {
+  align-self: center;
+  font-size: 1.8rem;
+  color: #20344c;
+}
+
+.link-transfer:link,
+.link-transfer:visited {
+  text-decoration: none;
+  color: #20344c;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #162233;
+  transition: all 0.4s;
+}
+
+.link-transfer:hover,
+.link-transfer:active {
+  border-bottom: none;
+  color: #416799;
+}
+
+/* BOOKMARK */
+
+.container-btn-bookmark {
+  margin-left: 4rem;
+  position: relative;
+}
+
+.navigation__btn-bookmark {
+  /* display: inline-block; */
+  border: none;
+  padding: 0.5rem;
+  /* border-radius: 50%; */
+  background-color: transparent;
+
+  overflow: hidden;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.navigation__btn-bookmark-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.navigation__btn-bookmark-icon:hover {
+  transform: scale(1.15);
+}
+
+.list__bookmarks {
+  list-style: none;
+  background-color: #fff;
+  padding: 2rem;
+  transform: translateY(50%) translateX(-40%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 6px;
+  height: 30rem;
+
+  overflow-y: scroll;
+  transition: all 0.5s ease-in-out;
+
+  position: absolute;
+  bottom: -16.5rem;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  /* flex-shrink: 0; */
+  box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.1);
+}
+
+.mark {
+  display: flex;
+  text-decoration: none;
+  gap: 1.5rem;
+  /* background-color: #e2eeff; */
+  padding: 1.2rem 1.8rem;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.mark:hover {
+  background-color: #e2eeff;
+}
+
+.mark__img {
+  display: inline-block;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+}
+
+.mark__name {
+  text-decoration: none;
+  color: #162233;
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.container-btn-hover-bookmark:hover .list__bookmarks {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* FAVORITE */
+
+.favorite__icon {
+  width: 3rem;
+  height: 3rem;
+  color: #4b9bdd;
+  align-self: flex-end;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+/* SPINNER */
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* ANIMATION */
+  animation: fly 3s infinite;
+}
+
+.spinner__icon {
+  width: 4rem;
+  height: 4rem;
+  color: #98c5ff;
+
+  animation: rotatePlane 3s infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(10rem);
+  }
+
+  50% {
+    transform: translateX(0rem);
+  }
+
+  75% {
+    transform: translateX(-10rem);
+  }
+
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes rotatePlane {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+  }
+}
+
+/* MESSAGE */
+
+.box-message {
+  justify-self: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+}
+
+.message {
+  font-size: 1.8rem;
+  background: linear-gradient(to right, #20344c, rgb(12, 113, 245));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.message__icon {
+  font-size: 3rem;
+  margin-right: 1.2rem;
+  color: #2e5e97;
+}
+
+.active-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mark-active {
+  background-color: #e2eeff;
+}
+
+#global-icon {
+  fill: red;
+}
