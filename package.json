@@ -2,9 +2,12 @@
   "name": "find-detail-from-a-country",
   "version": "2.0.0",
   "description": "",
-  "main": "controller.js",
+  "targets": {
+    "main": false
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --no-scope-hoist"
   },
   "author": "",
   "license": "ISC",

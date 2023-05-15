@@ -220,7 +220,7 @@ article {
   width: 3.5rem;
   height: 3.5rem;
   cursor: pointer;
-  color: #fff;
+  color: #f9f9f9;
   transition: all 0.3s;
 }
 
@@ -382,7 +382,8 @@ article {
 }
 
 .message__icon {
-  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
   margin-right: 1.2rem;
   color: #2e5e97;
 }

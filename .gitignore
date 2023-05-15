@@ -1,4 +1,6 @@
 sass
 node_modules
+.parcel-cache
+dist
 
 
